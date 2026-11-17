@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaSocial | Premium Social Media Marketing Agency</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="NovaSocial is a premium social media marketing agency with 5+ years of experience engineering brand growth through post boosting, video creation, and page management.">
+    <meta name="keywords" content="social media marketing, post boosting, TikTok management, Facebook page management, content creation, video editing, social ads">
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas for interactive background particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo-brand">
+                <span class="logo-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <span class="logo-text">Nova<span class="highlight">Social</span></span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-item active" id="nav-link-home">Home</a>
+                <a href="#about" class="nav-item" id="nav-link-about">About</a>
+                <a href="#services" class="nav-item" id="nav-link-services">Services</a>
+                <a href="#estimator" class="nav-item" id="nav-link-estimator">Estimator</a>
+                <a href="#portfolio" class="nav-item" id="nav-link-portfolio">Portfolio</a>
+                <a href="#contact" class="nav-item btn-nav" id="nav-link-contact">Get Started</a>
+            </nav>
+
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="experience-badge" id="exp-badge">
+                    <span class="badge-icon"><i class="fa-solid fa-award"></i></span>
+                    <span class="badge-text">5 Years of Marketing Excellence</span>
+                </div>
+                <h1 class="hero-title" id="hero-main-title">
+                    We Engineer <span class="text-gradient">Viral Growth</span> for Modern Brands
+                </h1>
+                <p class="hero-subtitle" id="hero-desc">
+                    Scale your digital presence. We specialize in post boosting, content production, high-converting video editing, and complete page management across TikTok, Facebook, and beyond.
+                </p>
+                <div class="hero-actions" id="hero-actions-container">
+                    <a href="#contact" class="btn btn-primary" id="btn-hero-cta">Propel Your Brand <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#estimator" class="btn btn-secondary" id="btn-hero-calc">Estimate Growth <i class="fa-solid fa-calculator"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" id="hero-main-visual">
+                <div class="floating-dashboard">
+                    <div class="dashboard-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="dashboard-title">novasocial_analytics.exe</span>
+                    </div>
+                    <div class="dashboard-body">
+                        <img src="assets/social_dashboard.png" alt="Marketing Dashboard" class="img-dashboard" id="img-hero-dashboard">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave Transition SVG -->
+        <div class="wave-transition">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,88.43,26.85,150.1,43.61,218.41,58.37,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats & About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="stats-grid" id="stats-numbers">
+                <div class="stat-card reveal-on-scroll" id="stat-years">
+                    <div class="stat-number" data-target="5">5+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-card reveal-on-scroll" id="stat-campaigns">
+                    <div class="stat-number" data-target="250">250+</div>
+                    <div class="stat-label">Campaigns Engineered</div>
+                </div>
+                <div class="stat-card reveal-on-scroll" id="stat-views">
+                    <div class="stat-number" data-target="15">15M+</div>
+                    <div class="stat-label">Organic & Paid Views</div>
+                </div>
+                <div class="stat-card reveal-on-scroll" id="stat-roi">
+                    <div class="stat-number" data-target="380">380%</div>
+                    <div class="stat-label">Average Ads ROI</div>
+                </div>
+            </div>
+
+            <div class="about-content-grid">
+                <div class="about-visual reveal-on-scroll" id="about-visual-box">
+                    <div class="creative-frame">
+                        <img src="assets/content_creation.png" alt="Content and Video Editing Production" class="img-creative" id="img-about-creative">
+                    </div>
+                </div>
+                <div class="about-text reveal-on-scroll" id="about-text-content">
+                    <h2 class="section-title"><span class="text-gradient">Our Story</span> & Mastery</h2>
+                    <p class="paragraph">
+                        For half a decade, we have been helping businesses cut through the noise. We aren't just marketers; we are content creators, audience analysts, and digital strategists.
+                    </p>
+                    <p class="paragraph">
+                        We take absolute control of your Facebook and TikTok handles, turning dry profiles into highly engaging, dynamic social hubs. By blending high-quality, motion-rich video production with data-driven paid advertising structures, we maximize your visibility and sales.
+                    </p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-circle-check text-gradient-green"></i> Deep targeting algorithms for post boosting</li>
+                        <li><i class="fa-solid fa-circle-check text-gradient-green"></i> High-conversion video scripting and editing styles</li>
+                        <li><i class="fa-solid fa-circle-check text-gradient-green"></i> 24/7 engagement and handle maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header reveal-on-scroll" id="services-header">
+                <h2 class="section-title text-center">Engineered <span class="text-gradient">Digital Services</span></h2>
+                <p class="section-subtitle text-center">
+                    A look into our core capabilities designed to attract, engage, and convert your target demographic.
+                </p>
+            </div>
+
+            <div class="services-grid" id="services-cards">
+                <!-- Card 1 -->
+                <div class="service-card reveal-on-scroll" id="service-boosting">
+                    <div class="service-glow"></div>
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="service-title">Post Boosting & Paid Ads</h3>
+                    <p class="service-description">
+                        Stop burning money on random boost buttons. We develop micro-targeted campaigns with precision demographics, customized funnels, and continuous A/B testing to guarantee maximum ROI.
+                    </p>
+                    <ul class="service-bullets">
+                        <li>Demographic Profiling</li>
+                        <li>Pixel Setup & Event Tracking</li>
+                        <li>Budget Optimization Algorithms</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card reveal-on-scroll" id="service-creation">
+                    <div class="service-glow"></div>
+                    <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="service-title">Video & Creative Production</h3>
+                    <p class="service-description">
+                        Attention is the new currency. We script, produce, and edit high-impact short-form videos (TikToks, Reels, Shorts) and design scroll-stopping graphical assets optimized for rapid engagement.
+                    </p>
+                    <ul class="service-bullets">
+                        <li>Short-Form Video Scripting</li>
+                        <li>Dynamic Motion Graphics</li>
+                        <li>High-converting Thumbnails</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card reveal-on-scroll" id="service-management">
+                    <div class="service-glow"></div>
+                    <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
+                    <h3 class="service-title">Handle & Page Management</h3>
+                    <p class="service-description">
+                        A dormant page is a dead lead. We take care of consistent posting schedules, comment interactions, community building, and brand voice alignment to keep your social presence active.
+                    </p>
+                    <ul class="service-bullets">
+                        <li>Content Calendars & Scheduling</li>
+                        <li>Community Moderation & Engagement</li>
+                        <li>Monthly Performance Audits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Growth Estimator Section (ROI Calculator) -->
+    <section id="estimator" class="estimator-section">
+        <div class="container">
+            <div class="section-header reveal-on-scroll" id="estimator-header">
+                <h2 class="section-title text-center">Social <span class="text-gradient">Growth Estimator</span></h2>
+                <p class="section-subtitle text-center">
+                    Adjust the sliders below to see standard projections of reach and engagement we can deliver based on your budget and campaign focus.
+                </p>
+            </div>
+
+            <div class="estimator-container reveal-on-scroll" id="estimator-box">
+                <div class="estimator-controls">
+                    <div class="control-group">
+                        <label for="budget-slider" class="control-label">
+                            <span>Monthly Boosting Budget</span>
+                            <span class="control-value" id="budget-value">$1,500</span>
+                        </label>
+                        <input type="range" id="budget-slider" min="100" max="10000" step="100" value="1500" class="styled-slider">
+                        <div class="slider-marks">
+                            <span>$100</span>
+                            <span>$5,000</span>
+                            <span>$10,000</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="platform-select" class="control-label">Target Campaign Focus</label>
+                        <div class="select-wrapper">
+                            <select id="platform-select" class="styled-select">
+                                <option value="tiktok">TikTok Video Viral Velocity</option>
+                                <option value="facebook" selected>Facebook Page Engagement & Leads</option>
+                                <option value="omni">Omni-Channel Brand Domination</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="estimator-results">
+                    <div class="results-header">Projections (Estimated Monthly)</div>
+                    
+                    <div class="results-grid">
+                        <div class="result-item" id="result-reach">
+                            <span class="result-icon"><i class="fa-solid fa-eye"></i></span>
+                            <div class="result-details">
+                                <span class="result-label">Est. Monthly Reach</span>
+                                <span class="result-number text-gradient-blue" id="est-reach">120K - 180K</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" id="result-actions">
+                            <span class="result-icon"><i class="fa-solid fa-hand-pointer"></i></span>
+                            <div class="result-details">
+                                <span class="result-label">Est. Conversions/Clicks</span>
+                                <span class="result-number text-gradient-green" id="est-clicks">4.8K - 7.2K</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Circular ROI Gauge (SVG) -->
+                    <div class="roi-gauge-container">
+                        <div class="roi-gauge">
+                            <svg class="gauge-svg" viewBox="0 0 100 100">
+                                <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+                                <circle class="gauge-fill" id="roi-gauge-fill" cx="50" cy="50" r="40" stroke-dasharray="251.2" stroke-dashoffset="62.8"></circle>
+                            </svg>
+                            <div class="gauge-content">
+                                <span class="gauge-num" id="gauge-roi-val">4.5x</span>
+                                <span class="gauge-label">Proj. ROI Multiplier</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header reveal-on-scroll" id="portfolio-header">
+                <h2 class="section-title text-center">Proven <span class="text-gradient">Campaign Showcase</span></h2>
+                <p class="section-subtitle text-center">
+                    A selection of social assets, analytics reports, and content styles that we engineered for client growth.
+                </p>
+            </div>
+
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters reveal-on-scroll" id="portfolio-tabs">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+                <button class="filter-btn" data-filter="boosting" id="filter-boosting">Paid Ads & Boosting</button>
+                <button class="filter-btn" data-filter="creatives" id="filter-creatives">Video & Graphics</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid reveal-on-scroll" id="portfolio-items">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="boosting" id="proj-dashboard">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="assets/social_dashboard.png" alt="Analytics Dashboard Project" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link"><i class="fa-solid fa-expand"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Paid Ads & Boosting</span>
+                            <h3 class="portfolio-title">E-Commerce Facebook Boosting</h3>
+                            <p class="portfolio-desc">Generated 4.8x Return on Ad Spend (ROAS) using dynamic catalog funnels and custom lookalike scaling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="creatives" id="proj-creatives">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="assets/content_creation.png" alt="Video Editing Work Showcase" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link"><i class="fa-solid fa-expand"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Video Production</span>
+                            <h3 class="portfolio-title">TikTok Video Campaign for SaaS</h3>
+                            <p class="portfolio-desc">Engineered viral UGC-style video script leading to 2.4M organic views and 45K app downloads.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="boosting" id="proj-lead-gen">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="assets/social_dashboard.png" alt="Lead Generation Dashboard" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link"><i class="fa-solid fa-expand"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Paid Ads & Boosting</span>
+                            <h3 class="portfolio-title">B2B Service Lead Generation</h3>
+                            <p class="portfolio-desc">Utilized hyper-targeted LinkedIn and Facebook custom lead forms, decreasing cost-per-lead by 34%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box reveal-on-scroll" id="contact-wrapper">
+                <div class="contact-info-panel">
+                    <h2 class="contact-title">Let's Fuel Your Brand</h2>
+                    <p class="contact-desc">
+                        Ready to scale? Connect with our technical experts to build a tailored plan for post boosting, custom video creatives, or handle moderation.
+                    </p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope info-icon"></i>
+                            <span class="info-text">hello@novasocial.agency</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone info-icon"></i>
+                            <span class="info-text">+1 (555) 304-9844</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot info-icon"></i>
+                            <span class="info-text">Digital Workspace / Remote Worldwide</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel">
+                    <form id="campaign-contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Your Name</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="e.g. john@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-business" class="form-label">Business Name / Website</label>
+                            <input type="text" id="form-business" class="form-input" placeholder="e.g. Acme Corp" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-service" class="form-label">Primary Interest</label>
+                            <div class="select-wrapper">
+                                <select id="form-service" class="form-input">
+                                    <option value="boosting">Post Boosting & Paid Ads Campaign</option>
+                                    <option value="content">Video & Graphic Content Creation</option>
+                                    <option value="management">Full Handle & Page Management</option>
+                                    <option value="all">Full Suite Scaling Package</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Campaign Details / Goal</label>
+                            <textarea id="form-message" rows="4" class="form-input text-area" placeholder="Describe your product/service, current social handles, and what goals you want to achieve..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            Launch My Campaign <i class="fa-solid fa-rocket"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Popup Modal inside Form panel (hidden initially) -->
+                    <div class="form-success-overlay" id="form-success-overlay">
+                        <div class="success-content">
+                            <div class="success-icon-box"><i class="fa-solid fa-circle-check"></i></div>
+                            <h3 class="success-title">Message Engineered!</h3>
+                            <p class="success-text">Thank you. Our growth analysts have received your campaign data and will review your social handles. We will get back to you within 24 hours.</p>
+                            <button class="btn btn-secondary" id="btn-success-close">Dismiss</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="logo-text">Nova<span class="highlight">Social</span></span>
+                </a>
+                <p class="footer-desc">
+                    5 years of engineering high-impact digital presence. We turn views into value and social handles into high-performing conversion engines.
+                </p>
+            </div>
+            
+            <div class="footer-links-grid">
+                <div class="footer-link-col">
+                    <h4 class="footer-col-title">Agency</h4>
+                    <a href="#about" class="footer-link">About Us</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#portfolio" class="footer-link">Showcase</a>
+                </div>
+                <div class="footer-link-col">
+                    <h4 class="footer-col-title">Tools & Features</h4>
+                    <a href="#estimator" class="footer-link">ROI Estimator</a>
+                    <a href="#contact" class="footer-link">Book Campaign</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright">&copy; 2026 NovaSocial Marketing. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>
